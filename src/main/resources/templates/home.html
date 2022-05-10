@@ -3,27 +3,32 @@
 <head> 
 
 	<link rel="stylesheet" th:href="@{/css/style.css}"/>
-	<link rel="javascript" th:href="@{/js/script.js}"/>
+    
 
-    <title>Getting Started: Serving Web Content</title> 
+    <title>Employee Search web page</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <h1>Here search your employee</h1>
+    <h1>Here search your employee.....</h1>
+    
+    	<script src="" th:src="@{js/script.js}"></script >
+    
     
     <div class="search-container-my-5">
-    <input onkeyup="search()" id="search-input" type ="text" class="form-control" placeholder="Search your Employeee"/>
+    <input onkeyup = "search()" id="search-input" type ="text" class="form-control" placeholder="Search your Employeee"/>
+    </div>
     
     <div class="search-result">
-    <h2> </h2>
+  
     </div>
     
-    </div>
     
     
     <div class = list-group>
     
     </div>
+    
     
 </body>
 </html>
