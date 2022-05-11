@@ -47,9 +47,4 @@ public class EmpController {
 		return ResponseEntity.ok(employee);
 	} 
 	 
-	/* @GetMapping("/search/{empName}")
-		public ResponseEntity<?> searchStudents(@RequestParam("empName") String empName){
-			return ResponseEntity.ok(empRepository.findAllByEmpNameContaining(empName));
-		}  */
-	 
 } 
