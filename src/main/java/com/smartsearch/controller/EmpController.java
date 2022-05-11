@@ -1,6 +1,5 @@
 package com.smartsearch.controller;
 
-import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +34,9 @@ public class EmpController {
 		return ResponseEntity.ok(empRepository.findAll());
 	}
 	
-	 @DeleteMapping("/delete/{id}")
-	    public String deleteEmployee(@PathVariable int id){
-	        empRepository.deleteById("id");
+	 @DeleteMapping("/delete/{empName}")
+	    public String deleteEmployee(@PathVariable String empName){
+	        empRepository.deleteById("empName");
 	        
 	        return "Deleted Successfully";
 	 } 
